@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-
+  name: string = "nextdesu";
+  link: string = "https://github.com/nextdesusu/cli-draw";
   constructor() { }
 
   ngOnInit(): void {
