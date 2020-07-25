@@ -1,3 +1,4 @@
-<canvas class="main-canvas-node" #canvas></canvas>
-<textarea #console></textarea>
-<button (click) = "draw(console.value)">draw</button>
+<div class="main-canvas-container">
+    <canvas class="main-canvas-node" #canvas></canvas>
+    <app-canvas-menu [drawFunction] = "drawFunction"></app-canvas-menu>
+</div>

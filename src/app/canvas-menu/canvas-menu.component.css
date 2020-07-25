@@ -1,0 +1,22 @@
+:host {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 90% 10%;
+}
+
+.menu-textarea {
+    border-radius: 0.3em;
+    resize: none;
+}
+
+.menu-button {
+    background-color: white;
+    color: blue;
+    text-transform: capitalize;
+}
+
+.menu-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

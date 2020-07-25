@@ -1,8 +1,22 @@
 :host {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-canvas-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-canvas-menu {
+    
 }
 
 .main-canvas-node {
     background-color: red;
+    width: 70vh;
+    height: 70vh;
 }

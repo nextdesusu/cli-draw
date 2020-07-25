@@ -17,16 +17,19 @@ export class MainCanvasComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  draw(toParse: string) {
-    const canvas: HTMLCanvasElement = this.canvas.nativeElement;
-    const context: CanvasRenderingContext2D = canvas.getContext("2d");
-    const args: PADArgs = {
-      command: toParse,
-      ctx: context,
-      width: this.width,
-      height: this.height,
-    };
-    parseAndDraw(args);
+  get drawFunction() {
+    return (toParse: string) => {
+      const canvas: HTMLCanvasElement = this.canvas.nativeElement;
+      const context: CanvasRenderingContext2D = canvas.getContext("2d");
+      const args: PADArgs = {
+        command: toParse,
+        ctx: context,
+        width: this.width,
+        height: this.height,
+      };
+      console.log("drawing!!!")
+      parseAndDraw(args);
+    }
   }
 
 }

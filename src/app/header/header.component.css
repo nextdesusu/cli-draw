@@ -1,0 +1,8 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    background-color: rgb(104, 104, 104);
+    color: rgb(189, 189, 189);
+}

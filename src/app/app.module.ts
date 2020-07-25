@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { MainCanvasComponent } from './main-canvas/main-canvas.component';
+import { CanvasMenuComponent } from './canvas-menu/canvas-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    MainCanvasComponent
+    MainCanvasComponent,
+    CanvasMenuComponent
   ],
   imports: [
     BrowserModule
